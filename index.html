@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Unlimited Blog Views by SH20RAJ</title>
+</head>
+
+<body>
+
+    <h2>Get Unlimited Blog Views by SH20RAJ</h2>
+
+
+
+    <input id="url" placeholder="enter url here" type="text" name="url">
+    <input type="number" placeholder="No. of views to get" name="" id="no">
+    <button onclick="gv()">GET</button>
+    <br>
+    Counting Your Views Here ... 
+    <p id="demo"></p>
+    <script>
+        var url = " ";
+        var text = "";
+        var i = 0;
+
+        function gv() {
+            url = document.getElementById("url").value;
+            var j = document.getElementById("no").value;
+            while (i < j) {
+                text += "<br>" + i + '<iframe class="iframe" width="560" height="0" src="' + url +
+                    '" frameborder="0" allow="accelerometer; autoplay="1"; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                i++;
+            }
+            document.getElementById("demo").innerHTML = text;
+
+        }
+    </script>
+
+</body>
+
+</html>
